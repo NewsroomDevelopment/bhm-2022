@@ -3,26 +3,42 @@ import styled from "styled-components";
 
 
 const Ball = styled.div`
-  height: 4vw;
-  width: 4vw;
-  padding: 2vw;
-  background-color: #bbb;
+  height: 10vw;
+  width: 10vw;
+  margin: 2vw;
+  background-color: ${(props) => props.trigger ? "white" : "#000000"};
   border-radius: 50%;
   display: inline-block;
-    }
+}
 `;
 
 const ImageWrap = styled.div`
-  width: 1.5vw;
-  height: 1.5vw;
-  transition: opacity 1.5s;
-  opacity: ${({ props }) => (props.trigger ? '1' : '0')};
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
 `;
 
-const LandingBall = ({ article, trigger }) => {
+const Row = styled.div`
+    width: 100%;
+`;
+
+const LandingBall = ({ article, scrolled }) => {
   return (
-    <ImageWrap trigger={trigger}>
-      <Ball src={article.image_url} />
+    <ImageWrap>
+      <Row>
+        <Ball trigger={scrolled}/>
+        <Ball trigger={scrolled}/>
+        <Ball trigger={scrolled}/>
+        <Ball trigger={scrolled}/>
+        <Ball trigger={scrolled}/>
+      </Row>
+      <Row>
+        <Ball trigger={scrolled}/>
+        <Ball trigger={scrolled}/>
+        <Ball trigger={scrolled}/>
+        <Ball trigger={scrolled}/>
+        <Ball trigger={scrolled}/>
+      </Row>
     </ImageWrap>
   );
 };

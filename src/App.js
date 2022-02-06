@@ -8,7 +8,7 @@ function App() {
     <ThemeProvider theme={Theme}>
       <GlobalStyles />
       <Landing />
-      <Sections />
+      <ArticleSection />
     </ThemeProvider>
   );
 }

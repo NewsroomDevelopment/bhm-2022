@@ -1,4 +1,3 @@
-const ArticleData = {
-}
+const ArticleData = {};
 
 export default ArticleData;

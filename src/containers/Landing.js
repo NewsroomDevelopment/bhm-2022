@@ -17,6 +17,10 @@ const Title = styled.div`
   line-height: 5vw;
 `;
 
+const Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 const Landing = ({}) => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -30,10 +34,18 @@ const Landing = ({}) => {
     <>
       <Wrapper>
         {scrolled && "scrolled"}
+        <Row>
+          <div> Ball </div>
+          <div> Ball </div>
+          <div> Ball </div>
+          <div> Ball </div>
+        </Row>
         <Title>
           {" "}
           A Look in: <br /> Black History Month
         </Title>
+        <Row></Row>
+        <Row></Row>
       </Wrapper>
     </>
   );

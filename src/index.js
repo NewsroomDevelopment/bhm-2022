@@ -1,16 +1,17 @@
-import React from "react";
-import { ThemeProvider } from "styled-components";
-import { GlobalStyles, Theme } from "./utils/Styles";
-import Landing from "./containers/Landing";
-import Sections from "./containers/Sections";
-function App() {
-  return (
-    <ThemeProvider theme={Theme}>
-      <GlobalStyles />
-      <Landing />
-      <Sections />
-    </ThemeProvider>
-  );
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-export default App;
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();

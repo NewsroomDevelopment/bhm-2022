@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
+import LandingBall from '../components/LandingBall';
+
+
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -17,6 +20,10 @@ const Title = styled.div`
   line-height: 5vw;
 `;
 
+const Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 const Landing = ({}) => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -30,10 +37,12 @@ const Landing = ({}) => {
     <>
       <Wrapper>
         {scrolled && "scrolled"}
+        <LandingBall scrolled={scrolled}/>
         <Title>
           {" "}
           A Look in: <br /> Black History Month
         </Title>
+        <LandingBall scrolled={scrolled}/>
       </Wrapper>
     </>
   );

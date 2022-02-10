@@ -39,31 +39,15 @@ const Row = styled.div`
     width: 100%;
 `;
 
-// const startStopAnimation = () => {
-//   // this.setState({ classNames: classNames ? "" : "animation" });
-// };
-
 const LandingBall = ({ article, scrolled }) => {
-
-  // if (scrolled)
-  //   startStopAnimation()
 
   return (
     <ImageWrap>
-      <Row>
         <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
         <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
         <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
         <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
         <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
-      </Row>
-      <Row>
-        <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
-        <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
-        <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
-        <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
-        <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
-      </Row>
     </ImageWrap>
   );
 };

@@ -20,8 +20,7 @@ const Title = styled.div`
 `;
 
 const Row = styled.div`
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
 `;
 
 const Landing = ({}) => {
@@ -37,12 +36,22 @@ const Landing = ({}) => {
     <>
       <Wrapper>
         {scrolled}
-        <LandingBall scrolled={scrolled}/>
+        <Row>
+          <LandingBall scrolled={scrolled}/>
+        </Row>
+        <Row>
+          <LandingBall scrolled={scrolled}/>
+        </Row>
         <Title>
           {" "}
           A Look in: <br /> Black History Month
         </Title>
-        <LandingBall scrolled={scrolled}/>
+        <Row>
+          <LandingBall scrolled={scrolled}/>
+        </Row>
+        <Row>
+          <LandingBall scrolled={scrolled}/>
+        </Row>
       </Wrapper>
     </>
   );

@@ -3,7 +3,6 @@ import styled from "styled-components";
 import LandingBall from '../components/LandingBall';
 
 
-
 const Wrapper = styled.div`
   height: 100vh;
   width: 100%;
@@ -24,6 +23,7 @@ const Row = styled.div`
   display: flex;
   justify-content: space-between;
 `;
+
 const Landing = ({}) => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -36,7 +36,7 @@ const Landing = ({}) => {
   return (
     <>
       <Wrapper>
-        {scrolled && "scrolled"}
+        {scrolled}
         <LandingBall scrolled={scrolled}/>
         <Title>
           {" "}

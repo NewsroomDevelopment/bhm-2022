@@ -20,6 +20,10 @@ const Title = styled.div`
   line-height: 5vw;
 `;
 
+const Row = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 const Landing = ({}) => {
   const [scrolled, setScrolled] = useState(false);
 

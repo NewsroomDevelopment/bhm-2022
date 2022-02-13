@@ -5,6 +5,9 @@ import { GlobalStyles, Theme } from "./utils/Styles";
 import Landing from "./containers/Landing";
 import ArticleSection from "./containers/ArticleSection";
 import TimelineContainer from "./containers/TImelineContainer";
+import Credits from "./containers/Credits";
+
+
 function App() {
   return (
     <ThemeProvider theme={Theme}>
@@ -12,6 +15,7 @@ function App() {
       <Landing />
       <ArticleSection />
       <TimelineContainer></TimelineContainer>
+      <Credits />
     </ThemeProvider>
   );
 }

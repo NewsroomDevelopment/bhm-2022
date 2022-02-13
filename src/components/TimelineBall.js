@@ -14,15 +14,24 @@ const TimelineBallStyle = styled.div`
     vertical-align: middle;
 `
 
-const TimelineBall = ({diameter, link, image, title}) => {
-    console.log(image)
-    return (
+const TimelineText = styled.div`
+    clear: left;
+    display: block;
+    padding-left: ${props => props.diameter/2}vw;
+    padding-right: ${props => props.diameter/2}vw;
+`
+
+const TimelineBall = ({ diameter, link, image, title }) => {
+  return (
+    <div>
       <TimelineBallStyle
         onclick={(event) => window.open(link)}
         diameter={diameter} image={image} title={title}>
-        <span class="tooltiptext">{title}</span>
       </TimelineBallStyle>
-    );
-  };
-  
-  export default TimelineBall;
+      <TimelineText diameter={diameter} class="caption">{title}</TimelineText>
+    </div>
+
+  );
+};
+
+export default TimelineBall;

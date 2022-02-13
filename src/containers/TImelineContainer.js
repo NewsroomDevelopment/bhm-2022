@@ -8,12 +8,10 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import ArticleData from '../data/ArticleData';
 import TimelineBall from '../components/TimelineBall';
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
-import { orange } from '@material-ui/core/colors';
-import { mergeClasses } from '@material-ui/styles';
 
 const useStyles = makeStyles((theme) => ({
         timeline: {
-            backgroundColor: 'blue',
+            backgroundColor: 'orange',
             width: '5px',
         }
   }));
@@ -40,7 +38,7 @@ const TimelineContainer = ({}) => {
         </div>
       </TimelineOppositeContent>
           <TimelineSeparator>
-            <TimelineConnector />
+            <TimelineConnector className={classes.timeline}/>
           </TimelineSeparator>
           <TimelineContent><div>
             {ArticleData['columbia'].map((article) => <TimelineBall diameter={article.diameter} link={article.link} image={article.image} title={article.title}></TimelineBall>)}
@@ -48,7 +46,7 @@ const TimelineContainer = ({}) => {
       </TimelineItem>
       <TimelineItem>
         <TimelineSeparator>
-            <TimelineConnector />
+            <TimelineConnector className={classes.timeline}/>
         </TimelineSeparator>
         <TimelineContent>
             <div>

@@ -15,13 +15,16 @@ const TimelineBallStyle = styled.div`
 `
 
 const TimelineBall = ({diameter, link, image, title}) => {
-    console.log(image)
     return (
-      <TimelineBallStyle
-        onclick={(event) => window.open(link)}
-        diameter={diameter} image={image} title={title}>
-        <span class="tooltiptext">{title}</span>
-      </TimelineBallStyle>
+        <div>
+        <TimelineBallStyle
+          onclick={(event) => window.open(link)}
+          diameter={diameter} image={image} title={title}>
+          <span class="caption">{title}</span>
+        </TimelineBallStyle>
+        <span class="caption">{title}</span>
+        </div>
+
     );
   };
   

@@ -1,6 +1,6 @@
-.tooltip {
-    display: inline-block;
-    /*border-bottom: 1px dotted black;*/
+.caption {
+    text-align: center;
+    vertical-align: top;
   }
   
   .tooltip .tooltiptext {

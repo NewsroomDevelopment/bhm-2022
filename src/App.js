@@ -13,7 +13,6 @@ function App() {
       <GlobalStyles />
       <Landing />
       <LetterSec />
-      <ArticleSection />
       <TimelineContainer></TimelineContainer>
     </ThemeProvider>
   );

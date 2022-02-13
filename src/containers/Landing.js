@@ -3,7 +3,6 @@ import styled from "styled-components";
 import LandingBall from '../components/LandingBall';
 
 
-
 const Wrapper = styled.div`
   height: 100vh;
   width: 100%;
@@ -21,9 +20,9 @@ const Title = styled.div`
 `;
 
 const Row = styled.div`
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
 `;
+
 const Landing = ({}) => {
   const [scrolled, setScrolled] = useState(false);
 
@@ -36,13 +35,23 @@ const Landing = ({}) => {
   return (
     <>
       <Wrapper>
-        {scrolled && "scrolled"}
-        <LandingBall scrolled={scrolled}/>
+        {scrolled}
+        <Row>
+          <LandingBall scrolled={scrolled}/>
+        </Row>
+        <Row>
+          <LandingBall scrolled={scrolled}/>
+        </Row>
         <Title>
           {" "}
           A Look in: <br /> Black History Month
         </Title>
-        <LandingBall scrolled={scrolled}/>
+        <Row>
+          <LandingBall scrolled={scrolled}/>
+        </Row>
+        <Row>
+          <LandingBall scrolled={scrolled}/>
+        </Row>
       </Wrapper>
     </>
   );

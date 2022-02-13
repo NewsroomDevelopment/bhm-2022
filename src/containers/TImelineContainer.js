@@ -21,6 +21,15 @@ const useStyles = makeStyles((theme) => ({
 const TimelineContainer = ({}) => {
     const classes = useStyles();
     
+    /* Multiple ways to do this
+      1. Separate data into left and write first and iterate through separately.
+         Once on the left side, once on the right side.
+      2. Don't seperate and only do 1 loop. If side == "left", put it on left side, blah blah
+      
+      Of course, account for type.
+        Either type == "article"
+        or type == "illo"
+    */
     return (
     <Timeline>
       <TimelineItem>

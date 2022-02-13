@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from "react";
 import styled from "styled-components";
 import LandingBall from '../components/LandingBall';
 
-
 const Wrapper = styled.div`
   height: 100vh;
   width: 100%;
@@ -52,7 +51,7 @@ const Landing = ({}) => {
         <Row>
           <LandingBall scrolled={scrolled}/>
         </Row>
-      </Wrapper>
+        </Wrapper>
     </>
   );
 };

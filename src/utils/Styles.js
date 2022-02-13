@@ -8,9 +8,7 @@ export const GlobalStyles = createGlobalStyle`
         fontStyle: bold;
         font-size: 4rem;
     }
-    br {
-      padding-bottom: 20%;
-    }
+
     div {
         font-family: 'Montserrat', sans-serif;
     }

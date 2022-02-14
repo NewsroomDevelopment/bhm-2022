@@ -1,6 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 
+import Nav from "../components/Nav";
+import { device } from "../device";
+const NavColumn = styled.div`
+  width: 25%;
+
+  @media ${device.mobile} {
+    width:0;
+  }
+`;
+
 const Title = styled.div`
 `
 

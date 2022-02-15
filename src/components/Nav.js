@@ -1,21 +1,24 @@
 import React from "react";
 import styled from "styled-components";
 import { device } from "../device";
+import bulletImage from "./bullet.png";
+import "./TimelineBall.css"
 
 //import NavImg from "../images/nav.png";
 //background-image: url(${NavImg});
 const NavSection = styled.div`
   position: fixed;
-  text-align: left;
   font-weight: 700;
   z-index: 100;
-  background-size: contain;
-
+  background-color: #FDE6C495;
   overflow: hidden;
-  height: 45vw;
-  
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin-top: 10em;
   top: 0;
-
+  padding-right: 3em;
+  border-radius: 10px;
+  width: 100%;
   @media ${device.tablet} {
     display: none;
   }
@@ -24,40 +27,40 @@ const NavSection = styled.div`
 const SectionText = styled.div`
   font-size: 1.5rem;
   line-height: 1.85em;
-  color: #14213D;;
-  
-  font-family: Roboto Slab;
+  color: #14213D;
+  text-align: left;
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: normal;
-  right: ${(props) => props.left}vw;
+  padding-left: 0.5em;
+}
 `;
 
 const NavText = styled.div`
-  margin-top: 3vw;
   text-align:left;
+  
 `;
 
-const BulletPoint = styled.li`
-  color: yellow;
-`;
 
-const Nav = () => {
+const Nav = ({current, setSection}) => {
   const sections = {
-    Columbia: 2.8,
-    "New York": 2.8,
-    Art: 8,
-    Sports: 5,
-    Opinion: 3.8,
-    "The Eye": 3.8,
+    Columbia: "columbia",
+    "New York": "ny",
+    Art: "art",
+    Sports: "sports",
+    Opinion: "opinion",
+    "The Eye": "eye",
   };
   return (
     <NavSection>
       <NavText>
+        <div class="hover-underline-animation">
         {Object.keys(sections).map((section) => (
-          <SectionText left={sections[section]}>
-            <li href={`#${section}`}>{section}</li>
+          <SectionText onClick={() => setSection(sections[section])}>
+            <li  href={`#${section}`}><a>{section}</a></li>
           </SectionText>
         ))}
+        </div>
       </NavText>
     </NavSection>
   );

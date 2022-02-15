@@ -9,6 +9,7 @@ import VerticalNav from '../components/Nav';
 const NavColumn = styled.div`
   width: 25%;
 
+  float:right;
   @media ${device.mobile} {
     width:0;
   }

@@ -6,13 +6,12 @@ import { device } from "../device";
 //background-image: url(${NavImg});
 const NavSection = styled.div`
   position: fixed;
-  left: 10vw;
+  text-align: left;
   font-weight: 700;
   z-index: 100;
   background-size: contain;
 
   overflow: hidden;
-  width: 100%;
   height: 45vw;
   
   top: 0;
@@ -22,18 +21,24 @@ const NavSection = styled.div`
   }
 `;
 
-const SectionNav = styled.div`
-  position: relative;
+const SectionText = styled.div`
   font-size: 1.5rem;
   line-height: 1.85em;
-  color: black;
-  font-weight: bold;
-  text-align:right;
+  color: #14213D;;
+  
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: normal;
   right: ${(props) => props.left}vw;
 `;
 
 const NavText = styled.div`
   margin-top: 3vw;
+  text-align:left;
+`;
+
+const BulletPoint = styled.li`
+  color: yellow;
 `;
 
 const Nav = () => {
@@ -49,9 +54,9 @@ const Nav = () => {
     <NavSection>
       <NavText>
         {Object.keys(sections).map((section) => (
-          <SectionNav left={sections[section]}>
+          <SectionText left={sections[section]}>
             <li href={`#${section}`}>{section}</li>
-          </SectionNav>
+          </SectionText>
         ))}
       </NavText>
     </NavSection>

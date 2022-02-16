@@ -43,6 +43,7 @@ const SectionText = styled.div`
   font-style: normal;
   font-weight: normal;
   padding-left: 0.5em;
+  cursor: pointer;
 }
 `;
 

@@ -19,8 +19,18 @@ const NavSection = styled.div`
   padding-right: 3em;
   border-radius: 10px;
   width: 100%;
-  @media ${device.tablet} {
-    display: none;
+  @media ${device.mobile} {
+    position: absolute;
+    font-weight: 400;
+    z-index: 100;
+    background-color: #FDE6C495;
+    overflow: hidden;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-top: 20em;
+    top: 0;
+    border-radius: 10px;
+    width: fit-content;
   }
 `;
 
@@ -38,6 +48,9 @@ const SectionText = styled.div`
 
 const NavText = styled.div`
   text-align:left;
+  @media ${device.mobile} {
+    text-align:center;
+  }
   
 `;
 

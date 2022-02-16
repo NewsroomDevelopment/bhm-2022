@@ -10,7 +10,8 @@ const NavColumn = styled.div`
   width: 10em;
   float:right;
   @media ${device.mobile} {
-    width:0;
+    width: 11em;
+    float: right;
   }
 `;
 

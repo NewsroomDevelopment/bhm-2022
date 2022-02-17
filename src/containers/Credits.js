@@ -65,7 +65,7 @@ font-family: 'Droid Sans';
 const Credits = () => {
   return (
     <>
-    <Text>
+    <CreditsSection>
       <h1>
         Thank you to...
       </h1>
@@ -144,7 +144,7 @@ const Credits = () => {
       <h2>Spectrum</h2>
       <h2>Arts and Entertainment</h2>
       <h2>The Eye</h2>
-    </Text>
+    </CreditsSection>
     </>
   );
 };

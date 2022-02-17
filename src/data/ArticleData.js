@@ -2,7 +2,6 @@
 const ArticleData = {
   landing1: [
     {
-      diameter: 10,
       link: "https://www.columbiaspectator.com/arts-and-entertainment/2022/02/11/feminism-futurism-and-marvel-deirdre-hollman-tc-23-on-the-black-comic-book-festival/",
       side: "left",
       type: "article",
@@ -10,37 +9,32 @@ const ArticleData = {
       title: "Feminism, futurism, and Marvel: Deirdre Hollman, TC ‘23, on the Black Comic Book Festival",
     },
     {
-      diameter: 20,
       link: "https://www.columbiaspectator.com/arts-and-entertainment/2022/02/10/from-his-deck-to-the-dance-floor-kofi-meighan-seas-23-on-djing-identity-creating-a-vibe-and-pushing-boundaries-through-music/",
       side: "left",
       type: "article",
       image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/NURPMZN4ONBZDMS5HNXNHFBOWE.jpeg",
       title: "From his deck to the dance floor: Kofi Meighan, SEAS ‘23, on DJing, identity, creating a vibe, and pushing boundaries through music",
     },
-    // image has an image link, title (for accessibility), and an illo type.
     {
       side: "right",
-      image:
-        "https://media.distractify.com/brand-img/L34zHqoRL/0x0/what-does-lame-duck-mean-in-politics-1605299800869.jpg",
-      title: "poopy",
-      type: "illo",
-      caption: "", // may be needed, depends on mockup
-    },
-    {
-      diameter: 10,
-      link: "https://www.columbiaspectator.com/arts-and-entertainment/2022/02/11/feminism-futurism-and-marvel-deirdre-hollman-tc-23-on-the-black-comic-book-festival/",
+      link: "https://www.columbiaspectator.com/opinion/2022/02/16/building-a-community-for-columbias-black-student-athletes/",
       side: "left",
       type: "article",
-      image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/E74GEMVZ5VH73F7UAZ5FF6TLTI.jpeg",
-      title: "Feminism, futurism, and Marvel: Deirdre Hollman, TC ‘23, on the Black Comic Book Festival",
+      image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/XZZHMU3MHNBD7BS2W2RN74FW6Q.png",
+      title: "Building a community for Columbia’s Black student-athletes",
     },
     {
-      diameter: 10,
-      link: "https://www.columbiaspectator.com/arts-and-entertainment/2022/02/10/from-his-deck-to-the-dance-floor-kofi-meighan-seas-23-on-djing-identity-creating-a-vibe-and-pushing-boundaries-through-music/",
+      link: "https://www.columbiaspectator.com/opinion/2022/02/16/why-we-need-an-organization-for-black-muslims/",
       side: "left",
       type: "article",
-      image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/NURPMZN4ONBZDMS5HNXNHFBOWE.jpeg",
-      title: "From his deck to the dance floor: Kofi Meighan, SEAS ‘23, on DJing, identity, creating a vibe, and pushing boundaries through music",
+      image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/GBFCSN5Q2NHCJI2S3F3BKGPA5Q.gif",
+      title: "Why we need an organization for Black Muslims",   
+    },
+    {
+      side: "left",
+      type: "article",
+      image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/W6OMIPS36JC5TEGQ5R3FMBXRIY.jpeg",
+      title: "Hartley Hospitality?",
     },
     {
       diameter: 10,
@@ -265,11 +259,51 @@ const ArticleData = {
   sports: [
     {
       diameter: 10,
-      link: "",
-      side: "",
-      image: "",
-      title: "",
+      link: "https://www.columbiaspectator.com/sports/2022/02/14/the-olympic-lineage-inspiring-generations-of-fencers-to-come/",
+      side: "right",
       type: "article",
+      image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/JLDXBV5OWBFIXI7UDZCHC36RTM.PNG",
+      title: "The Olympic lineage inspiring generations of fencers to come",
+    },
+    {
+      diameter: 10,
+      link: "https://www.columbiaspectator.com/sports/2022/02/15/gym-crow-looking-back-on-the-1968-morningside-gym-protests/",
+      side: "left",
+      type: "article",
+      image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/KQ47JY5RZBABHM7OTO2W5NFD4Y.png",
+      title: "’Gym Crow’: Looking back on the 1968 Morningside Gym protests",
+    },
+    {
+      diameter: 10,
+      link: "https://www.columbiaspectator.com/sports/2022/02/14/it-doesnt-surprise-me-joshua-ogunsanya-leads-collegiate-wrestlings-nigerian-takeover/",
+      side: "right",
+      type: "article",
+      image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/HVUSJOHDB5GOHAGU3LP5LERPIU.jpg",
+      title: "’It doesn’t surprise me’: Joshua Ogunsanya leads collegiate wrestling’s ‘Nigerian takeover’",
+    },
+    {
+      diameter: 10,
+      link: "https://www.columbiaspectator.com/sports/2022/02/10/black-student-athlete-alliance-gives-athletes-a-community-to-create-change/",
+      side: "left",
+      type: "article",
+      image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/GVK2RFWJABDL7IKY7OCVJAIT6Y.PNG",
+      title: "Black Student-Athlete Alliance gives athletes a community to create change",
+    },
+    {
+      diameter: 10,
+      link: "https://www.columbiaspectator.com/sports/2022/02/10/remembering-frank-thomas-columbia-basketball-star-and-philanthropic-giant/",
+      side: "left",
+      type: "article",
+      image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/S5O3UDBOLRBTPKNFWYMEUZENX4.jpg",
+      title: "Remembering Frank Thomas, Columbia basketball star and philanthropic giant",
+    },
+    {
+      diameter: 10,
+      link: "https://www.columbiaspectator.com/sports/2022/02/14/manuel-golden-flash-riveros-storied-columbia-career-as-a-two-sport-athlete/",
+      side: "left",
+      type: "article",
+      image: "https://cloudfront-us-east-1.images.arcpublishing.com/spectator/NMMKAXKQ5FCPTIPA24OPKOQFPA.jpg",
+      title: "Manuel ‘Golden Flash’ Rivero’s storied career as a two-sport athlete",
     },
     {
       side: "",

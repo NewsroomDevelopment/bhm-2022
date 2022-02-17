@@ -13,6 +13,7 @@ const TimelineBallStyle = styled.button`
     background-size: cover;
     vertical-align: middle;
     border: transparent;
+    cursor: pointer;
 `
 
 const TimelineText = styled.div`
@@ -31,8 +32,8 @@ const TimelineBall = ({ diameter, link, image, title }) => {
   return (
     <div>
       <TimelineBallStyle
-        onClick={function(){window.open(image)}}
-        diameter={diameter} image={image} title={title}>
+        onClick={function(){window.open(link)}}
+        diameter={diameter} image={image} title={title} link={link}>
       </TimelineBallStyle>
       <TimelineText diameter={diameter} class="caption">{title}</TimelineText>
     </div>

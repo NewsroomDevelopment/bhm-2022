@@ -11,12 +11,13 @@ const TimelineHeadingStyle = styled.div`
     font-size: 2rem;
 `
 
-const TimelineHeading = ({section, side}) => {
-    return(
-
-        <TimelineHeadingStyle side={side}>
-            {section}
-        </TimelineHeadingStyle>
+const TimelineHeading = ({ section, side }) => {
+    return (
+        <div id={section.toLowerCase()}>
+            <TimelineHeadingStyle side={side}>
+                {section}
+            </TimelineHeadingStyle>
+        </div>
     )
 }
 

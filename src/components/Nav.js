@@ -46,7 +46,7 @@ const NavText = styled.div`
 `;
 
 
-const Nav = ({current, setSection}) => {
+const Nav = ({ current, setSection }) => {
   const sections = {
     Columbia: "columbia",
     "New York": "ny",
@@ -59,14 +59,14 @@ const Nav = ({current, setSection}) => {
     <NavSection>
       <NavText>
         <div class="hover-underline-animation">
-        {Object.keys(sections).map((section) => (
-          <SectionText onClick={() => setSection(sections[section])}>
-            <li  href={`#${section}`}><a>{section}</a></li>
-          </SectionText>
-        ))}
+          {Object.keys(sections).map((section) => (
+            <SectionText>
+              <li><a href={`#${section.toLowerCase()}`}> {section}</a></li>
+            </SectionText>
+          ))}
         </div>
       </NavText>
-    </NavSection>
+    </NavSection >
   );
 };
 

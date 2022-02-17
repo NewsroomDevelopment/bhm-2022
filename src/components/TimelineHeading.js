@@ -7,6 +7,8 @@ const TimelineHeadingStyle = styled.div`
     border-bottom: 0.5vw solid orange;
     padding: 2vw;
     text-align: left;
+    font-family: Roboto Slab;
+    font-size: 2rem;
 `
 
 const TimelineHeading = ({section, side}) => {

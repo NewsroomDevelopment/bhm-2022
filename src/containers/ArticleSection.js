@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   width: 100%;
   background-color: #fff5e1;
   padding-top: 5vh;
+  padding-bottom: 15vw;
 `;
 
 const useStyles = makeStyles((theme) => ({

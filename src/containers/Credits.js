@@ -5,6 +5,8 @@ import styled from "styled-components";
 import "../index.css";
 
 const CreditsSection = styled.div`
+  margin-top: -5vw; 
+  padding-bottom: 10vw;
   height: auto;
   width: 100%;
   background-size: cover;

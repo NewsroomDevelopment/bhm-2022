@@ -32,14 +32,13 @@ const Title = styled.div`
   align-items: center;
   text-align: center;
   line-height: 5vw;
-  font-family: Noto Sans Kannada, sans-serif;
+  font-family: Roboto Slab;
+  font-weight: 900;
 `;
 
 const Row = styled.div`
   width: 100%;
 `;
-
-
 
 const Landing = ({}) => {
   const [scrolled, setScrolled] = useState(false);

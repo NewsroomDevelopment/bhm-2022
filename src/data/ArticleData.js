@@ -335,7 +335,6 @@ const ArticleData = {
 export default ArticleData;
 
 /*
-
 example of article
   {
     diameter: 10,
@@ -345,7 +344,6 @@ example of article
     title: "",
     type: "article",
   }
-
 example of image
   {
     side: "",
@@ -354,5 +352,4 @@ example of image
     caption: "",
     type: "illo",
   },
-
 */

@@ -20,17 +20,7 @@ const NavSection = styled.div`
   border-radius: 10px;
   width: 100%;
   @media ${device.mobile} {
-    position: absolute;
-    font-weight: 400;
-    z-index: 100;
-    background-color: #FDE6C495;
-    overflow: hidden;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    margin-top: 20em;
-    top: 0;
-    border-radius: 10px;
-    width: fit-content;
+    display: none;
   }
 `;
 

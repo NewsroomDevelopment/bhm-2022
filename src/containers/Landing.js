@@ -5,6 +5,8 @@ import LandingBall from '../components/LandingBall';
 import { device } from "../device";
 import VerticalNav from '../components/Nav';
 import ArticleData from '../data/ArticleData';
+import MobileNavBar from "../components/MobileNav";
+
 
 const NavColumn = styled.div`
   width: 10em;
@@ -50,14 +52,16 @@ const Landing = ({}) => {
   
   return (
     <>
+    <NavColumn>
+         <VerticalNav/>
+      </NavColumn>
+      <MobileNavBar/>
       <Wrapper>
         {scrolled}
         <Row>
           <LandingBall articles={ArticleData['landing1']} scrolled={scrolled}/>
         </Row>
-      <NavColumn>
-         <VerticalNav/>
-      </NavColumn>
+      
         <Title>
           {" "}
           A Look in: <br /> Black History Month

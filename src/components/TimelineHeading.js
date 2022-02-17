@@ -9,12 +9,13 @@ const TimelineHeadingStyle = styled.div`
     text-align: left;
 `
 
-const TimelineHeading = ({section, side}) => {
-    return(
-
-        <TimelineHeadingStyle side={side}>
-            {section}
-        </TimelineHeadingStyle>
+const TimelineHeading = ({ section, side }) => {
+    return (
+        <div id={section.toLowerCase()}>
+            <TimelineHeadingStyle side={side}>
+                {section}
+            </TimelineHeadingStyle>
+        </div>
     )
 }
 

@@ -1,12 +1,14 @@
 import React from "react";
 import styled, { keyframes, css } from "styled-components";
 import "../index.css";
+import ArticleData from '../data/ArticleData';
 
 const Ball = styled.div`
   height: 10vw;
   width: 10vw;
   margin: 2vw;
-  background-color: red;
+  background-image: url(${(props) => props.image});
+  background-size: cover;
   border-radius: 50%;
   display: inline-block;
   animation: ${(props) => props.trigger ? css`${drop(props.percent)} 3s forwards` : ""};
@@ -14,11 +16,11 @@ const Ball = styled.div`
 `;
 
 const drop = randomPercent => keyframes`
-    0%   {background-color:red; opacity: 1;}
-    25%  {background-color:yellow;}
-    50%  {background-color:blue;}
-    75%  {background-color:green;}
-    100% {background-color:red; opacity: 0;}
+    0%   {opacity: 0.75;}
+    25%  {}
+    50%  {}
+    75%  {}
+    100% {opacity: 0;}
 
     from {
       transform: translateY(0%);
@@ -39,16 +41,18 @@ const Row = styled.div`
 `;
 
 const LandingBall = ({ article, scrolled }) => {
-
+  console.log(ArticleData['columbia'])
   return (
     <ImageWrap>
-        <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
-        <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
-        <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
-        <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
-        <Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
+      {ArticleData['ae'].map((article) => <Ball trigger={scrolled} percent={Math.random() * 400 + 250} image={article.image} ></Ball>)}
     </ImageWrap>
   );
 };
 
 export default LandingBall;
+
+
+      //<Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
+      //<Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
+      //<Ball trigger={scrolled} percent={Math.random() * 400 + 250} />
+      //<Ball trigger={scrolled} percent={Math.random() * 400 + 250} />

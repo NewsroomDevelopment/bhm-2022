@@ -12,9 +12,9 @@ import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import TimelineHeading from '../components/TimelineHeading';
 
 const Wrapper = styled.div`
-  height: 100vh;
   width: 100%;
   background-color: #fff5e1;
+  padding-top: 5vh;
 `;
 
 const useStyles = makeStyles((theme) => ({

@@ -20,3 +20,38 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+  .hover-underline-animation li {
+    list-style-image: url("bullet.png");
+  }
+  .hover-underline-animation li a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Roboto',sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80%;
+    line-height: 33px;
+    padding-left: 0.5em;
+    color: #14213D;
+  }
+  
+  .hover-underline-animation li a::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 93%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0.5em;
+    background-color: #14213D;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    right: 0.5em;
+  }

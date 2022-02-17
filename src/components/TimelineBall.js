@@ -13,6 +13,8 @@ const TimelineBallStyle = styled.button`
     background-size: cover;
     vertical-align: middle;
     border: transparent;
+    cursor: pointer;
+    font-family: Roboto Slab;
 `
 
 const TimelineText = styled.div`
@@ -20,6 +22,8 @@ const TimelineText = styled.div`
     display: block;
     padding-left: ${props => props.diameter/2}vw;
     padding-right: ${props => props.diameter/2}vw;
+    font-family: Roboto, sans-serif;
+    font-style: italic; 
 `
 
 function NewTab() {
@@ -31,8 +35,8 @@ const TimelineBall = ({ diameter, link, image, title }) => {
   return (
     <div>
       <TimelineBallStyle
-        onClick={function(){window.open(image)}}
-        diameter={diameter} image={image} title={title}>
+        onClick={function(){window.open(link)}}
+        diameter={diameter} image={image} title={title} link={link}>
       </TimelineBallStyle>
       <TimelineText diameter={diameter} class="caption">{title}</TimelineText>
     </div>

@@ -12,6 +12,7 @@ const LetterWrap = styled.div`
         padding-left:5%;
         padding-right:5%;
     }
+    font-family: Roboto Slab;
 `;
 
 const CrownStyle = styled.div`
@@ -25,9 +26,9 @@ const CrownStyle = styled.div`
 `;
 
 const Title = styled.div`
-    font-family: Noto Serif Tamil Slanted;
+    font-family: Roboto Slab;
     font-style: italic;
-    font-weight: 200;
+    font-weight: 400;
     font-size: 2em;
     line-height: 62px;
     text-align: center;
@@ -40,7 +41,7 @@ const Title = styled.div`
 `;
 
 const Body = styled.div`
-    font-family: Noto Serif Tamil Slanted;
+    font-family: Roboto Slab;
     font-style: italic;
     font-weight: 200;
     line-height: 30px;

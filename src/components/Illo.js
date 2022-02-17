@@ -3,8 +3,8 @@ import styled from "styled-components";
 import "./TimelineBall.css";
 
 const IlloDiv = styled.div`
-  height: ${(props) => props.height};
-  width: ${(props) => props.width};
+  height: ${(props) => props.height}vh;
+  width: ${(props) => props.width}vw;
   background-image: ${(props) => props.image};
   transform: rotate(${(props) => props.rotation}deg);
 `;

@@ -6,6 +6,8 @@ import styled from "styled-components";
 import "../index.css";
 
 const CreditsSection = styled.div`
+  margin-top: -5vw; 
+  padding-bottom: 10vw;
   height: auto;
   width: 100%;
   background-size: cover;
@@ -57,7 +59,6 @@ const Row = styled.div`
   @media (max-width: 768px) {
     font-size: 1em !important;
     font-family: "Droid Sans";
-=======
 font-family: 'Roboto Slab';
   @media (max-width: 1000px) {
     font-size: 0.75em;
@@ -67,14 +68,12 @@ font-family: 'Roboto Slab';
   @media (max-width: 768px) {
     font-size: 1em !important;
     font-family: 'Roboto Slab';
->>>>>>> Stashed changes
   }
 `;
 
 const Credits = () => {
   return (
     <>
-=======
     <CreditsSection>
       <CreditsTitle>
         Thank you to...

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Timeline from "@material-ui/lab/Timeline";
 import ArticleData from "../data/ArticleData";
-import TimelineContainer from "./TimelineContainer";
+import TimelineContainer from "./TImelineContainer";
 import Nav from "../components/Nav";
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
 
@@ -19,6 +19,7 @@ const Wrapper = styled.div`
   width: 100%;
   background-color: #fff5e1;
   padding-top: 5vh;
+  padding-bottom: 15vw;
 `;
 
 const useStyles = makeStyles((theme) => ({

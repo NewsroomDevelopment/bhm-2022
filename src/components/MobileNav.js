@@ -22,7 +22,7 @@ const NavWrap = styled.div`
         left:0;
         flex-wrap: wrap;
         z-index:100;
-        background-color: #FDE6C4;
+        background-color: black;
      }
 `;
 
@@ -58,11 +58,12 @@ const MobileNavBar = ({ color, current, setSection }) => {
     }
     const sections = {
         Columbia: "columbia",
-        "New York": "ny",
-        Art: "art",
+        "A&E": "arts & entertainment",
         Sports: "sports",
+        "New York": "new york",
         Opinion: "opinion",
-        "The Eye": "eye",
+        "The Eye": "the eye",
+        Spectrum: "spectrum"
       };
     return (
     <>
@@ -95,7 +96,7 @@ const MobileNavBar = ({ color, current, setSection }) => {
         <Menu isOpen={open} width={'100vw'}>
             {Object.keys(sections).map((section) => (
             <Tab onClick={() => setSection(sections[section])}>
-                {section}
+                <a href={`#${sections[section].toLowerCase()}`}> {section}</a>
             </Tab>
             ))}
         </Menu>

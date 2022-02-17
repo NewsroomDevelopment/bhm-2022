@@ -49,11 +49,12 @@ const NavText = styled.div`
 const Nav = ({ current, setSection }) => {
   const sections = {
     Columbia: "columbia",
-    "New York": "ny",
-    Art: "art",
+    "A&E": "arts & entertainment",
     Sports: "sports",
+    "New York": "new york",
     Opinion: "opinion",
-    "The Eye": "eye",
+    "The Eye": "the eye",
+    Spectrum: "spectrum"
   };
   return (
     <NavSection>
@@ -61,7 +62,7 @@ const Nav = ({ current, setSection }) => {
         <div class="hover-underline-animation">
           {Object.keys(sections).map((section) => (
             <SectionText>
-              <li><a href={`#${section.toLowerCase()}`}> {section}</a></li>
+              <li><a href={`#${sections[section].toLowerCase()}`}> {section}</a></li>
             </SectionText>
           ))}
         </div>

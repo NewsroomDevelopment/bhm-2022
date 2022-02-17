@@ -27,17 +27,26 @@ const NavWrap = styled.div`
 `;
 
 const Tab = styled.a`
-    background-color: #FDE6C4;
-    color: "white"};
+    font-size: 1.5rem;
+    line-height: 1.85em;
+    color: black;
+    text-align: center;
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 0.5em;
+    cursor: pointer;
+    background-color: #FDE6C495;
 `;
 const Logo = styled.div`
     z-index:100;
     position:relative;
     left:5%;
 `;
+
 const Burger = styled.div`
     z-index:100;
-    position:absolute;
+    position:relative;
     right:5%;
 `;
 const MobileNavBar = ({ color, current, setSection }) => {
@@ -47,9 +56,16 @@ const MobileNavBar = ({ color, current, setSection }) => {
         console.log(open)
         setOpen(!open)
     }
-
+    const sections = {
+        Columbia: "columbia",
+        "New York": "ny",
+        Art: "art",
+        Sports: "sports",
+        Opinion: "opinion",
+        "The Eye": "eye",
+      };
     return (
-
+    <>
         <NavWrap>
             <Logo>
                 <a href="https://www.columbiaspectator.com/" style={{
@@ -72,14 +88,18 @@ const MobileNavBar = ({ color, current, setSection }) => {
                 zIndex={100}
                 className="over"
             />
+            
             </Burger>
-            <Menu isOpen={open} width={'100vw'}>
-                {/* <Tab id="home"  current={current === "home"} className="menu-item" href="/">Home</Tab> */}
-                <Tab onClick={() => ("womens")} className="menu-item">WOMEN'S BASKETBALL</Tab>
-                <Tab onClick={() => setSection("mens")} className="menu-item">MEN'S BASKETBALL</Tab>
-                <Tab onClick={() => setSection("all")} className="menu-item--small">ALL</Tab>
-            </Menu>
+            
         </NavWrap>
+        <Menu isOpen={open} width={'100vw'}>
+            {Object.keys(sections).map((section) => (
+            <Tab onClick={() => setSection(sections[section])}>
+                {section}
+            </Tab>
+            ))}
+        </Menu>
+        </>
 
 
     );

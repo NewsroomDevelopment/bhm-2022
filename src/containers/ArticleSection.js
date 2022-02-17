@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Timeline from "@material-ui/lab/Timeline";
 import ArticleData from "../data/ArticleData";
-import TimelineContainer from "./TimelineContainer";
+import TimelineContainer from "./TImelineContainer";
 import Nav from "../components/Nav";
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
 

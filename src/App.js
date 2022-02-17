@@ -5,6 +5,7 @@ import { GlobalStyles, Theme } from "./utils/Styles";
 import Landing from "./containers/Landing";
 import ArticleSection from "./containers/ArticleSection";
 import LetterSec from './containers/LetterEditor';
+import Credits from "./containers/Credits";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Landing />
       <LetterSec />
       <ArticleSection/>
+      <Credits />
     </ThemeProvider>
   );
 }

@@ -1,7 +1,68 @@
 import React from "react";
 import styled from "styled-components";
+//import CreditsImg from "../images/credits.png";
+//import { device } from "../device";
+import '../index.css';
 
-const Credits = ({}) => {
+
+const CreditsSection = styled.div`
+  height: auto;
+  width: 100%;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #fff5e1;
+  font-family: 'Roboto Slab';
+`;
+
+const CreditsTitle = styled.div`
+  text-align: center;
+  color: black;
+  position: relative;
+  top: 20%;
+  padding-top: 7%;
+  font-size: 5rem;
+  font-family: 'Roboto Slab';
+`;
+
+const Body = styled.div`
+  h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Droid Sans';
+  }
+  margin-top: 5%;
+  font-family: 'Droid Sans';
+
+`;
+
+const SubDiv = styled.div`
+  width: 75vw;
+  width: fit-content;
+  color: black;
+  font-family: 'Droid Sans';
+`;
+
+const Row = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  font-size: 0.8em;
+  justify-content: center;
+  justify-content: space-evenly;
+font-family: 'Droid Sans';
+  @media (max-width: 1000px) {
+    font-size: 0.75em;
+    font-family: 'Droid Sans';
+
+  }
+  @media (max-width: 768px) {
+    font-size: 1em !important;
+    font-family: 'Droid Sans';
+  }
+`;
+
+const Credits = () => {
   return (
     <>
     <Text>
@@ -81,7 +142,7 @@ const Credits = ({}) => {
       <h2>Sports</h2>
       <h2>Opinion</h2>
       <h2>Spectrum</h2>
-      <h2>Arts & Entertainment</h2>
+      <h2>Arts and Entertainment</h2>
       <h2>The Eye</h2>
     </Text>
     </>

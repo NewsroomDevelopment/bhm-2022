@@ -49,6 +49,18 @@ const TimelineContainer = ({ }) => {
         </TimelineItem>
         
         <TimelineItem>
+          <TimelineOppositeContent>
+             <TimelineHeading section='new york' side='left'></TimelineHeading>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector className={classes.timeline} />
+          </TimelineSeparator>
+          <TimelineContent><div>
+            {ArticleData['columbia'].map((article) => article.side === "right" ? <TimelineBall diameter={article.diameter} link={article.link} image={article.image} title={article.title}></TimelineBall> : null)}
+          </div></TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector className={classes.timeline} />
           </TimelineSeparator>

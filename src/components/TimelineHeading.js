@@ -2,14 +2,18 @@ import react from "react";
 import styled from "styled-components";
 
 const TimelineHeadingStyle = styled.div`
-    
-    border-bottom: 5px solid orange;
+    margin-left: ${props => props.side === "left" ? "20vw" : "-2vw"};
+    margin-right: ${props => props.side === "left" ? "-2vw" : "20vw"};;
+    border-bottom: 0.5vw solid orange;
+    padding: 2vw;
+    text-align: left;
 `
 
-const TimelineHeading = ({section}) => {
+const TimelineHeading = ({section, side}) => {
     return(
-        <TimelineHeadingStyle>
-            <span>section</span>
+
+        <TimelineHeadingStyle side={side}>
+            {section}
         </TimelineHeadingStyle>
     )
 }

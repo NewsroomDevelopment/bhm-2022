@@ -8,6 +8,13 @@
   pointer-events: none;
 }
 
+
+.MuiTimelineOppositeContent-root {
+  padding: 6px 0px !important;
+}
+.MuiTimelineContent-root {
+  padding: 6px 0px !important;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

@@ -17,7 +17,7 @@ const ArticleData = {
       type: "article",
       image:
         "https://media.distractify.com/brand-img/L34zHqoRL/0x0/what-does-lame-duck-mean-in-politics-1605299800869.jpg",
-      title: "poopy",
+      title: "test right",
     },
     // image has an image link, title (for accessibility), and an illo type.
     {
@@ -136,7 +136,6 @@ const ArticleData = {
 export default ArticleData;
 
 /*
-
 example of article
   {
     diameter: 10,
@@ -146,7 +145,6 @@ example of article
     title: "",
     type: "article",
   }
-
 example of image
   {
     side: "",
@@ -155,5 +153,4 @@ example of image
     caption: "",
     type: "illo",
   },
-
 */

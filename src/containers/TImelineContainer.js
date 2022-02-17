@@ -9,6 +9,7 @@ import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
 import ArticleData from "../data/ArticleData";
 import TimelineBall from "../components/TimelineBall";
 import { makeStyles, ThemeProvider } from "@material-ui/core/styles";
+import TimelineHeading from "../components/TimelineHeading";
 
 const useStyles = makeStyles((theme) => ({
   timeline: {
@@ -17,49 +18,26 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Wrapper = ({ children, condition, wrapper, otherWrapper }) =>
-  condition ? wrapper(children) : otherWrapper(children);
-
 const TimelineContainer = ({ data, index }) => {
   const classes = useStyles();
+
   const articles = data.filter((article) => article.type === "article");
-  console.log(articles);
   const leftArticles = articles.filter((article) => article.side === "left");
   const rightArticles = articles.filter((article) => article.side === "right");
 
-  /* Multiple ways to do this
-    1. Separate data into left and write first and iterate through separately.
-       Once on the left side, once on the right side.
-    2. Don't seperate and only do 1 loop. If side == "left", put it on left side, blah blah
-    
-    Of course, account for type.
-      Either type == "article"
-      or type == "illo"
-  */
+  const title = data[0];
+
+  const illos = data.filter((illo) => illo.type === "illo");
+  const leftIllos = illos.filter((illo) => illo.side === "left");
+  const rightIllos = illos.filter((illo) => illo.side === "right");
+
   return (
     <>
       <TimelineItem>
-        {/* 
-        <Wrapper
-          condition={index % 2 == 0}
-          wrapper={(children) => <TimelineContent>{children}</TimelineContent>}
-          otherWrapper={(children) => (
-            <TimelineOppositeContent>{children}</TimelineOppositeContent>
-          )}
-        >
-          {data.map((article) => {
-            return (
-              <TimelineBall
-                diameter={article.diameter}
-                link={article.link}
-                image={article.image}
-                title={article.title}
-              ></TimelineBall>
-            );
-          })}
-        </Wrapper> */}
-
         <TimelineOppositeContent>
+          {title.side == "left" && (
+            <TimelineHeading side={title.side} section={title.section} />
+          )}
           {leftArticles.map((article) => {
             return (
               <TimelineBall
@@ -75,6 +53,9 @@ const TimelineContainer = ({ data, index }) => {
           <TimelineConnector className={classes.timeline} />
         </TimelineSeparator>
         <TimelineContent>
+          {title.side == "right" && (
+            <TimelineHeading side={title.side} section={title.section} />
+          )}
           {rightArticles.map((article) => {
             return (
               <TimelineBall
@@ -86,89 +67,7 @@ const TimelineContainer = ({ data, index }) => {
             );
           })}
         </TimelineContent>
-
-        {/* <TimelineContent>
-            <div>
-              {ArticleData["columbia"].map((article) => (
-                <TimelineBall
-                  diameter={article.diameter}
-                  link={article.link}
-                  image={article.image}
-                  title={article.title}
-                ></TimelineBall>
-              ))}
-            </div>
-          </TimelineContent> */}
       </TimelineItem>
-
-      {/* 
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineConnector className={classes.timeline} />
-        </TimelineSeparator>
-        <TimelineContent>
-          <div>
-            {ArticleData["columbia"].map((article) => (
-              <TimelineBall
-                diameter={article.diameter}
-                link={article.link}
-                image={article.image}
-                title={article.title}
-              ></TimelineBall>
-            ))}
-          </div>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineOppositeContent>
-          <div>
-            {ArticleData["columbia"].map((article) => (
-              <TimelineBall
-                diameter={article.diameter}
-                link={article.link}
-                image={article.image}
-                title={article.title}
-              ></TimelineBall>
-            ))}
-          </div>
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector className={classes.timeline} />
-        </TimelineSeparator>
-        <TimelineContent>
-          <div>
-            {ArticleData["columbia"].map((article) => (
-              <TimelineBall
-                diameter={article.diameter}
-                link={article.link}
-                image={article.image}
-                title={article.title}
-              ></TimelineBall>
-            ))}
-          </div>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator>
-          <TimelineConnector className={classes.timeline} />
-        </TimelineSeparator>
-        <TimelineContent>
-          <div>
-            {ArticleData["newyork"].map((article) => (
-              <TimelineBall
-                diameter={article.diameter}
-                link={article.link}
-                image={article.image}
-                title={article.title}
-              ></TimelineBall>
-            ))}
-          </div>
-        </TimelineContent>
-      </TimelineItem>
-      <TimelineItem>
-        <TimelineSeparator></TimelineSeparator>
-        <TimelineContent>Sleep</TimelineContent>
-      </TimelineItem> */}
     </>
   );
 };

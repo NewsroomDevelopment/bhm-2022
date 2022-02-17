@@ -14,6 +14,7 @@ const TimelineBallStyle = styled.button`
     vertical-align: middle;
     border: transparent;
     cursor: pointer;
+    font-family: Roboto Slab;
 `
 
 const TimelineText = styled.div`
@@ -21,6 +22,8 @@ const TimelineText = styled.div`
     display: block;
     padding-left: ${props => props.diameter/2}vw;
     padding-right: ${props => props.diameter/2}vw;
+    font-family: Roboto, sans-serif;
+    font-style: italic; 
 `
 
 function NewTab() {

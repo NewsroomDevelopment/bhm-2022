@@ -13,7 +13,8 @@ import Illo from "../components/Illo";
 const useStyles = makeStyles((theme) => ({
   timeline: {
     backgroundColor: "orange",
-    width: "5px",
+    width: "0.3vw",
+    margin: "0px",
   },
 }));
 
@@ -50,7 +51,7 @@ const TimelineContainer = ({ data, index }) => {
             );
           })}
         </TimelineOppositeContent>
-        <TimelineSeparator>
+        <TimelineSeparator className={classes.timeline}>
           <TimelineConnector className={classes.timeline} />
         </TimelineSeparator>
         <TimelineContent>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import "./TimelineBall.css"
 
-const TimelineBallStyle = styled.div`
+const TimelineBallStyle = styled.button`
     border-radius: 50%;
     width: ${props => props.diameter}vw;
     height: ${props => props.diameter}vw;
@@ -12,6 +12,7 @@ const TimelineBallStyle = styled.div`
     margin: 2vw;
     background-size: cover;
     vertical-align: middle;
+    border: transparent;
 `
 
 const TimelineText = styled.div`
@@ -21,11 +22,16 @@ const TimelineText = styled.div`
     padding-right: ${props => props.diameter/2}vw;
 `
 
+function NewTab() {
+  window.open(
+    "https://www.geeksforgeeks.org", "_blank");
+}
+
 const TimelineBall = ({ diameter, link, image, title }) => {
   return (
     <div>
       <TimelineBallStyle
-        onclick={(event) => window.open(link)}
+        onClick={function(){window.open(image)}}
         diameter={diameter} image={image} title={title}>
       </TimelineBallStyle>
       <TimelineText diameter={diameter} class="caption">{title}</TimelineText>

@@ -1,4 +1,5 @@
 import React from "react";
+import { UNSAFE_NavigationContext } from "react-router-dom";
 import styled from "styled-components";
 //import CreditsImg from "../images/credits.png";
 //import { device } from "../device";
@@ -28,35 +29,17 @@ const Body = styled.div`
   h2 {
     text-align: center;
     color: black;
-<<<<<<< Updated upstream
     font-family: "Droid Sans";
   }
   margin-top: 5%;
   font-family: "Droid Sans";
-=======
-    font-family: 'Roboto Slab';
-  }
-  p {
-    text-align: center;
-
-    color: black;
-    font-family: 'Roboto Slab';
-  }
-  margin-top: 2%;
-  font-family: 'Roboto Slab';
-
->>>>>>> Stashed changes
 `;
 
 const SubDiv = styled.div`
   width: 75vw;
   width: fit-content;
   color: black;
-<<<<<<< Updated upstream
   font-family: "Droid Sans";
-=======
-  font-family: 'Roboto Slab';
->>>>>>> Stashed changes
 `;
 
 const Row = styled.div`
@@ -66,7 +49,6 @@ const Row = styled.div`
   font-size: 0.8em;
   justify-content: center;
   justify-content: space-evenly;
-<<<<<<< Updated upstream
   font-family: "Droid Sans";
   @media (max-width: 1000px) {
     font-size: 0.75em;
@@ -92,91 +74,11 @@ font-family: 'Roboto Slab';
 const Credits = () => {
   return (
     <>
-<<<<<<< Updated upstream
-      <h1>Thank you to...</h1>
-      <h2>Corporate Board</h2>
-      <p>Clare Ence Morse, Editor-in-Chief</p>
-      <p>Dia Gill, Managing Editor</p>
-      <p>Vilanna Wang, Publisher</p>
-      <h2>Design and Development</h2>
-      <p>Victoria Geh, Head of Newsroom Development</p>
-      <p>Hong Du, Senior Newsroom Development</p>
-      <p>Patrick Puma, Deputy Newsroom Development</p>
-      <p>Elaine Lee, Newsroom Developer</p>
-      <p>James Yiu, Newsroom Developer</p>
-      <p>Noah Bergam, Newsroom Developer</p>
-      <h2>Cover Illustration By:</h2>
-      <p>Sadia Sharif, Deputy Illustrations Editor</p>
-      <h2>Illustration</h2>
-      <p>Yingjie Wang, Illustrations Editor</p>
-      <p>Julian Michaud, Deputy Illustrations Editor</p>
-      <p>Liza Evseeva, Deputy Illustrations Editor</p>
-      <p>Noelle Hunter, Deputy Illustrations Editor</p>
-      <p>Carlos Ochoa, Staff Illustrator</p>
-      <p>Chiara Guigou, Staff Illustrator</p>
-      <p>Ji Yoon Sim, Staff Illustrator</p>
-      <p>Katya Reichert, Staff Illustrator</p>
-      <p>Magan Chin, Staff Illustrator</p>
-      <p>Marion Kamara, Staff Illustrator</p>
-      <p>Natalie Tak, Staff Illustrator</p>
-      <p>Tejasri Vijayakumar, Staff Illustrator</p>
-      <p>Tina Wang, Staff Illustrator</p>
-      <h2>News</h2>
-      <h2>Copy</h2>
-      <p>Kaylene Su Yee Chong, Head Copy Editor</p>
-      <p>Katherine Carraway, Deputy Copy Editor</p>
-      <p>Vincenzo DiNatale, Deputy Copy Editor</p>
-      <p>Robyn Fohouo, Deputy Copy Editor</p>
-      <p>Maria Levit, Deputy Copy Editor</p>
-      <p>Jonah Pitkowsky, Deputy Copy Editor</p>
-      <p>Harry Shi, Deputy Copy Editor</p>
-      <p>Renuka Balakrishnan, Associate Copy Editor</p>
-      <p>Sam Barnett, Associate Copy Editor</p>
-      <p>Rachel Borshchenko, Associate Copy Editor</p>
-      <p>Adam Burns, Associate Copy Editor</p>
-      <p>Ronit Dhulia, Associate Copy Editor</p>
-      <p>Ana Eveleigh, Associate Copy Editor</p>
-      <p>Madison Guzy, Associate Copy Editor</p>
-      <p>Sadie Rochman, Associate Copy Editor</p>
-      <p>Noyna Roy, Associate Copy Editor</p>
-      <p>Yvin Shin, Associate Copy Editor</p>
-      <p>Abby Sim, Associate Copy Editor</p>
-      <p>Natarsha Yan, Associate Copy Editor</p>
-      <p>Bonnie Yang, Associate Copy Editor</p>
-      <p>Safia Aladlouni, Preslotter</p>
-      <p>Emma Grungold, Preslotter</p>
-      <p>Willa Nagy, Preslotter</p>
-      <p>Grace O'Malley, Preslotter</p>
-      <p>Maya Platek, Preslotter</p>
-      <p>Leif Wood, Preslotter</p>
-      <p>Lanah Wyne, Preslotter</p>
-      <h2>Photo</h2>
-      <p>Millie Felder, Photo Editor</p>
-      <p>Kate Della Pietra, Deputy Photo Editor</p>
-      <p>Samantha Camacho, Deputy Photo Editor</p>
-      <p>Kat St. Martin, Deputy Photo Editor</p>
-      <p>Alex Kieu, Deputy Photo Editor</p>
-      <p>Rommel Nunez, Senior Staff Photographer</p>
-      <p>Pippa Tsuki Carlson, Staff Photographer</p>
-      <p>Gabi Levy, Staff Photographer</p>
-      <p>Shannon Binns, Staff Photographer</p>
-      <p>Annie Son, Staff Photographer</p>
-      <p>Caitlin Buckley, Staff Photographer</p>
-      <p>Jane Mok, Staff Photographer</p>
-      <p>Emma Snoddy, Staff Photographer</p>
-      <h2>Sports</h2>
-      <h2>Opinion</h2>
-      <h2>Spectrum</h2>
-      <h2>Arts and Entertainment</h2>
-      <h2>The Eye</h2>
 =======
     <CreditsSection>
       <CreditsTitle>
         Thank you to...
       </CreditsTitle>
-
-
-
        <Body>
               <Row>
                 <SubDiv>
@@ -385,30 +287,164 @@ const Credits = () => {
             	<p>
         <b>Emma Snoddy</b>, Staff Photographer
       </p>
-      </div>
-            <h2>Sports</h2>
-            <h2>Opinion</h2>
-            <h2>Spectrum</h2>
-            <h2>Arts and Entertainment</h2>
-
-            <div>
-            <h2>The Eye</h2>
-	<p><b>Annie Cheng,</b> Eye Managing Editor</p>
-<p><b>Derek Ng,</b> Eye Managing Editor</p>
-<p><b>Lilienne Shore Kilgore-Brown,</b> Features Editor</p>
-<p><b>Meg Lunny,</b> Leads Editor</p>
-<p><b>Bella Aldrete</b> View From Here Editor</p>
-<p><b>Mel Wang</b></p>
+  </div>
+  <div>
+    <h2>Opinion</h2>
+      <p>
+        <b>Senem Yurdakul</b>, Editorial Page Editor
+      </p>
+      <p>
+        <b>Ryan Oden</b>, Admin Deputy Editor
+      </p>
+      <p>
+        <b>Sean Conlon</b>, Admin Deputy Editor
+      </p>
+      <p>
+        <b>Karlton Gaskin</b>, City Deputy Editor
+      </p>
+      <p>
+        <b>Julian Novarr</b>, Contributor Deputy Editor
+      </p>
+      <p>
+        <b>Lauren Zhou</b>, Student Life Deputy Editor
+      </p>
+      <p>
+        <b>Celeste Ramirez</b>, Senior Associate
+      </p>
+      <p>
+        <b>Sara Chough</b>, Senior Associate
+      </p>
+      <p>
+        <b>Melanie Cheung</b>, Senior Associate
+      </p>
+      <p>
+        <b>Michaela Fleischer</b>, Senior Associate
+      </p>
+      <p>
+        <b>Sydney Goldson</b>, Senior Associate
+      </p>
+      <p>
+        <b>Maria Rice</b>, Senior Associate
+      </p>
+      <p>
+        <b>Milene Klein</b>, Senior Associate
+      </p>
+      <p>
+        <b>Eki Uzamere</b>, Associate
+      </p>
+      <p>
+        <b>Tori Sproat</b>, Associate
+      </p>
+      <p>
+        <b>Julien Roa</b>, Associate
+      </p>
+  </div>
+  <div>
+    <h2>Spectrum</h2>
+      <p>
+        <b>Ariana Novo</b>, Spectrum Editor
+      </p>
+      <p>
+        <b>Emma Cho</b>, Deputy Spectrum Editor
+      </p>
+      <p>
+        <b>Haley Long</b>, Deputy Spectrum Editor
+      </p>
+      <p>
+        <b>Aliza Rabinovitz</b>, Deputy Spectrum Editor
+      </p>
+      <p>
+        <b>Swethaa Suresh</b>, Deputy Spectrum Editor
+      </p>
+      <p>
+        <b>Kylie Gall</b>, Staff Writer
+      </p>
+      <p>
+        <b>Caroline Somers</b>, Staff Writer
+      </p>
+      <p>
+        <b>Michelle Twan</b>, Staff Writer
+      </p>
+  </div>
+  <div>
+    <h2>Arts and Entertainment</h2>
+      <p>
+        <b>Bella Druckman</b>, Arts and Entertainment Editor
+      </p>
+      <p>
+        <b>Fernanda Aguero</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Noah Bullwinkle</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Isa Farfan</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Vincent Hou</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Katie Levine</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Irene Madrigal</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Emma Schartz</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Fernanda Aguero</b>, Deputy Editor
+      </p>
+  </div>
+  <div>
+    <h2>The Eye</h2>
+	    <p>
+        <b>Annie Cheng</b>, Eye Managing Editor
+      </p>
+      <p>
+        <b>Derek Ng</b>, Eye Managing Editor
+      </p>
+      <p>
+        <b>Lilienne Shore Kilgore-Brown</b>, Features Editor
+      </p>
+      <p>
+        <b>Meg Lunny</b>, Leads Editor
+      </p>
+      <p>
+        <b>Bella Aldrete</b>, View From Here Editor
+      </p>
+      <p>
+        <b>Mel Wang</b>
+      </p>
+  </div>
+  <div>
+    <h2>Sports</h2>
+      <p>
+        <b>Miles Schachner</b>, Sports Editor
+      </p> 
+      <p>
+        <b>Jorge Hernandez</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Stephen Dames</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Robert Gao</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Matthew Kim</b>
+      </p>
+      <p>
+        <b>Rebecca Wachen</b>
+      </p>
+      <p>
+        <b>Takashi Williams</b>
+      </p>
 </div>
-
-
       </SubDiv>
               </Row>
             </Body>
             </CreditsSection>
-
-
->>>>>>> Stashed changes
     </>
   );
 };

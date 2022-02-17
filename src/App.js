@@ -7,6 +7,7 @@ import ArticleSection from "./containers/ArticleSection";
 import TimelineContainer from "./containers/TImelineContainer";
 import LetterSec from './containers/LetterEditor';
 import Credits from "./containers/Credits";
+import './App.css';
 
 function App() {
   return (

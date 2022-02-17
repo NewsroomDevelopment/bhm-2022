@@ -4,6 +4,8 @@ import LandingBall from '../components/LandingBall';
 
 import { device } from "../device";
 import VerticalNav from '../components/Nav';
+import ArticleData from '../data/ArticleData';
+
 
 
 const NavColumn = styled.div`
@@ -52,10 +54,7 @@ const Landing = ({}) => {
       <Wrapper>
         {scrolled}
         <Row>
-          <LandingBall scrolled={scrolled}/>
-        </Row>
-        <Row>
-          <LandingBall scrolled={scrolled}/>
+          <LandingBall articles={ArticleData['landing1']} scrolled={scrolled}/>
         </Row>
       <NavColumn>
          <VerticalNav/>
@@ -65,11 +64,9 @@ const Landing = ({}) => {
           A Look in: <br /> Black History Month
         </Title>
         <Row>
-          <LandingBall scrolled={scrolled}/>
+          <LandingBall articles={ArticleData['landing2']} scrolled={scrolled}/>
         </Row>
-        <Row>
-          <LandingBall scrolled={scrolled}/>
-        </Row>
+
         </Wrapper>
     </>
   );

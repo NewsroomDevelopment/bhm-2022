@@ -40,11 +40,12 @@ const Row = styled.div`
     width: 100%;
 `;
 
-const LandingBall = ({ article, scrolled }) => {
-  console.log(ArticleData['columbia'])
+
+const LandingBall = ({ articles, scrolled }) => {
+
   return (
     <ImageWrap>
-      {ArticleData['ae'].map((article) => <Ball trigger={scrolled} percent={Math.random() * 400 + 250} image={article.image} ></Ball>)}
+      {articles.map((article) => <Ball trigger={scrolled} percent={Math.random() * 400 + 250} image={article.image} ></Ball>)}
     </ImageWrap>
   );
 };

@@ -31,17 +31,21 @@ const Body = styled.div`
   h2 {
     text-align: center;
     color: black;
-    font-family: "Droid Sans";
+    font-family: "Roboto";
+  }
+  p {
+    text-align: center;
+    font-family: "Roboto Slab";
   }
   margin-top: 5%;
-  font-family: "Droid Sans";
+  font-family: "Robot Slab";
 `;
 
 const SubDiv = styled.div`
   width: 75vw;
   width: fit-content;
   color: black;
-  font-family: "Droid Sans";
+  font-family: "Roboto Slab";
 `;
 
 const Row = styled.div`

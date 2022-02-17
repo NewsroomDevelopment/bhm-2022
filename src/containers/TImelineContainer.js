@@ -47,6 +47,8 @@ const TimelineContainer = ({ data, index }) => {
                 height={item.height}
                 width={item.width}
                 rotation={item.rotation}
+                paddingLeft={item.paddingLeft}
+                paddingRight={item.paddingRight}
               />
             );
           })}
@@ -72,6 +74,8 @@ const TimelineContainer = ({ data, index }) => {
                 height={item.height}
                 width={item.width}
                 rotation={item.rotation}
+                paddingLeft={item.paddingLeft}
+                paddingRight={item.paddingRight}
               />
             );
           })}

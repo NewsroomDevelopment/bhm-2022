@@ -3,13 +3,21 @@ import styled from "styled-components";
 import "./TimelineBall.css";
 
 const IlloDiv = styled.div`
-  height: ${(props) => props.height}vh;
+  height: ${(props) => props.height}vw;
   width: ${(props) => props.width}vw;
-  background-image: ${(props) => props.image};
+  background-image: url(${(props) => props.image});
   transform: rotate(${(props) => props.rotation}deg);
+  display: inline-block;
+  //margin: 2vw;
+  background-size: cover;
+  vertical-align: middle;
+  border: transparent;
+  margin-left: ${(props) => props.paddingLeft}vw;
+  margin-right: ${(props) => props.paddingRight}vw;
+  margin-top: 2vw;
 `;
 
-const Illo = ({ image, height, width, rotation }) => {
+const Illo = ({ image, height, width, rotation, paddingLeft, paddingRight}) => {
   return (
     <>
       <IlloDiv
@@ -17,6 +25,8 @@ const Illo = ({ image, height, width, rotation }) => {
         height={height}
         width={width}
         rotation={rotation}
+        paddingLeft={paddingLeft}
+        paddingRight={paddingRight}
       />
     </>
   );

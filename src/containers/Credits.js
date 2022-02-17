@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 //import CreditsImg from "../images/credits.png";
 //import { device } from "../device";
-import '../index.css';
-
+import "../index.css";
 
 const CreditsSection = styled.div`
   height: auto;
@@ -12,7 +11,7 @@ const CreditsSection = styled.div`
   background-position: top;
   background-repeat: no-repeat;
   background-color: #fff5e1;
-  font-family: 'Roboto Slab';
+  font-family: "Roboto Slab";
 `;
 
 const CreditsTitle = styled.div`
@@ -22,25 +21,24 @@ const CreditsTitle = styled.div`
   top: 20%;
   padding-top: 7%;
   font-size: 5rem;
-  font-family: 'Roboto Slab';
+  font-family: "Roboto Slab";
 `;
 
 const Body = styled.div`
   h1 {
     text-align: center;
     color: black;
-    font-family: 'Droid Sans';
+    font-family: "Droid Sans";
   }
   margin-top: 5%;
-  font-family: 'Droid Sans';
-
+  font-family: "Droid Sans";
 `;
 
 const SubDiv = styled.div`
   width: 75vw;
   width: fit-content;
   color: black;
-  font-family: 'Droid Sans';
+  font-family: "Droid Sans";
 `;
 
 const Row = styled.div`
@@ -50,25 +48,21 @@ const Row = styled.div`
   font-size: 0.8em;
   justify-content: center;
   justify-content: space-evenly;
-font-family: 'Droid Sans';
+  font-family: "Droid Sans";
   @media (max-width: 1000px) {
     font-size: 0.75em;
-    font-family: 'Droid Sans';
-
+    font-family: "Droid Sans";
   }
   @media (max-width: 768px) {
     font-size: 1em !important;
-    font-family: 'Droid Sans';
+    font-family: "Droid Sans";
   }
 `;
 
 const Credits = () => {
   return (
     <>
-    <CreditsSection>
-      <h1>
-        Thank you to...
-      </h1>
+      <h1>Thank you to...</h1>
       <h2>Corporate Board</h2>
       <p>Clare Ence Morse, Editor-in-Chief</p>
       <p>Dia Gill, Managing Editor</p>
@@ -144,7 +138,6 @@ const Credits = () => {
       <h2>Spectrum</h2>
       <h2>Arts and Entertainment</h2>
       <h2>The Eye</h2>
-    </CreditsSection>
     </>
   );
 };

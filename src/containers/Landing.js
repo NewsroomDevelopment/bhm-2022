@@ -6,8 +6,6 @@ import { device } from "../device";
 import VerticalNav from '../components/Nav';
 import ArticleData from '../data/ArticleData';
 
-
-
 const NavColumn = styled.div`
   width: 10em;
   float:right;
@@ -31,6 +29,7 @@ const Title = styled.div`
   align-items: center;
   text-align: center;
   line-height: 5vw;
+  font-family: Noto Sans Kannada, sans-serif;
 `;
 
 const Row = styled.div`

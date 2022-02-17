@@ -156,6 +156,11 @@ const ArticleData = {
   ],
   columbia: [
     {
+      side: "left",
+      type: "header",
+      section: "Columbia"
+    },
+    {
       diameter: 10,
       link: "https://www.columbiaspectator.com/arts-and-entertainment/2022/02/11/feminism-futurism-and-marvel-deirdre-hollman-tc-23-on-the-black-comic-book-festival/",
       side: "left",
@@ -181,24 +186,12 @@ const ArticleData = {
       caption: "", // may be needed, depends on mockup
     },
   ],
-  newyork: [
-    {
-      diameter: 10,
-      link: "poop",
-      image: "./duck.jpg",
-      side: "left",
-      type: "article",
-      title: "sausages",
-    },
+  ae: [
     {
       side: "right",
-      image: "./duck.jpg",
-      caption: "",
-      type: "illo",
-      title: "poopy",
+      type: "header",
+      section: "Arts & Entertainment"
     },
-  ],
-  ae: [
     {
       diameter: 10,
       link: "https://www.columbiaspectator.com/arts-and-entertainment/2022/02/11/feminism-futurism-and-marvel-deirdre-hollman-tc-23-on-the-black-comic-book-festival/",
@@ -258,6 +251,33 @@ const ArticleData = {
   ],
   sports: [
     {
+      side: "left",
+      type: "header",
+      section: "Sports"
+    },
+    {
+      diameter: 10,
+      link: "",
+      side: "",
+      image: "",
+      title: "",
+      type: "article",
+    },
+    {
+      side: "",
+      image: "",
+      title: "",
+      caption: "",
+      type: "illo",
+    },
+  ],
+  newyork: [
+    {
+      side: "right",
+      type: "header",
+      section: "New York"
+    },
+    {
       diameter: 10,
       link: "https://www.columbiaspectator.com/sports/2022/02/14/the-olympic-lineage-inspiring-generations-of-fencers-to-come/",
       side: "right",
@@ -315,6 +335,11 @@ const ArticleData = {
   ],
   opinion: [
     {
+      side: "left",
+      type: "header",
+      section: "Opinion"
+    },
+    {
       diameter: 10,
       link: "",
       side: "",
@@ -332,6 +357,11 @@ const ArticleData = {
   ],
   eye: [
     {
+      side: "left",
+      type: "header",
+      section: "The Eye"
+    },
+    {
       diameter: 10,
       link: "",
       side: "",
@@ -348,6 +378,11 @@ const ArticleData = {
     },
   ],
   spectrum: [
+    {
+      side: "right",
+      type: "header",
+      section: "Spectrum"
+    },
     {
       diameter: 10,
       link: "",

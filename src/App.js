@@ -6,6 +6,7 @@ import Landing from "./containers/Landing";
 import ArticleSection from "./containers/ArticleSection";
 import LetterSec from './containers/LetterEditor';
 import Credits from "./containers/Credits";
+import './App.css';
 
 function App() {
   return (

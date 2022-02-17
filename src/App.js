@@ -6,6 +6,7 @@ import Landing from "./containers/Landing";
 import ArticleSection from "./containers/ArticleSection";
 import TimelineContainer from "./containers/TImelineContainer";
 import LetterSec from './containers/LetterEditor';
+import Credits from "./containers/Credits";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Landing />
       <LetterSec />
       <TimelineContainer></TimelineContainer>
+      <Credits />
     </ThemeProvider>
   );
 }

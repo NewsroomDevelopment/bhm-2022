@@ -1,4 +1,5 @@
 import React from "react";
+import { UNSAFE_NavigationContext } from "react-router-dom";
 import styled from "styled-components";
 //import CreditsImg from "../images/credits.png";
 //import { device } from "../device";
@@ -30,24 +31,17 @@ const Body = styled.div`
   h2 {
     text-align: center;
     color: black;
-    font-family: 'Roboto Slab';
+    font-family: "Droid Sans";
   }
-  p {
-    text-align: center;
-
-    color: black;
-    font-family: 'Roboto Slab';
-  }
-  margin-top: 2%;
-  font-family: 'Roboto Slab';
-
+  margin-top: 5%;
+  font-family: "Droid Sans";
 `;
 
 const SubDiv = styled.div`
   width: 75vw;
   width: fit-content;
   color: black;
-  font-family: 'Roboto Slab';
+  font-family: "Droid Sans";
 `;
 
 const Row = styled.div`
@@ -57,6 +51,14 @@ const Row = styled.div`
   font-size: 0.8em;
   justify-content: center;
   justify-content: space-evenly;
+  font-family: "Droid Sans";
+  @media (max-width: 1000px) {
+    font-size: 0.75em;
+    font-family: "Droid Sans";
+  }
+  @media (max-width: 768px) {
+    font-size: 1em !important;
+    font-family: "Droid Sans";
 font-family: 'Roboto Slab';
   @media (max-width: 1000px) {
     font-size: 0.75em;
@@ -76,9 +78,6 @@ const Credits = () => {
       <CreditsTitle>
         Thank you to...
       </CreditsTitle>
-
-
-
        <Body>
               <Row>
                 <SubDiv>
@@ -287,29 +286,164 @@ const Credits = () => {
             	<p>
         <b>Emma Snoddy</b>, Staff Photographer
       </p>
-      </div>
-            <h2>Sports</h2>
-            <h2>Opinion</h2>
-            <h2>Spectrum</h2>
-            <h2>Arts and Entertainment</h2>
-
-            <div>
-            <h2>The Eye</h2>
-	<p><b>Annie Cheng,</b> Eye Managing Editor</p>
-<p><b>Derek Ng,</b> Eye Managing Editor</p>
-<p><b>Lilienne Shore Kilgore-Brown,</b> Features Editor</p>
-<p><b>Meg Lunny,</b> Leads Editor</p>
-<p><b>Bella Aldrete</b> View From Here Editor</p>
-<p><b>Mel Wang</b></p>
+  </div>
+  <div>
+    <h2>Opinion</h2>
+      <p>
+        <b>Senem Yurdakul</b>, Editorial Page Editor
+      </p>
+      <p>
+        <b>Ryan Oden</b>, Admin Deputy Editor
+      </p>
+      <p>
+        <b>Sean Conlon</b>, Admin Deputy Editor
+      </p>
+      <p>
+        <b>Karlton Gaskin</b>, City Deputy Editor
+      </p>
+      <p>
+        <b>Julian Novarr</b>, Contributor Deputy Editor
+      </p>
+      <p>
+        <b>Lauren Zhou</b>, Student Life Deputy Editor
+      </p>
+      <p>
+        <b>Celeste Ramirez</b>, Senior Associate
+      </p>
+      <p>
+        <b>Sara Chough</b>, Senior Associate
+      </p>
+      <p>
+        <b>Melanie Cheung</b>, Senior Associate
+      </p>
+      <p>
+        <b>Michaela Fleischer</b>, Senior Associate
+      </p>
+      <p>
+        <b>Sydney Goldson</b>, Senior Associate
+      </p>
+      <p>
+        <b>Maria Rice</b>, Senior Associate
+      </p>
+      <p>
+        <b>Milene Klein</b>, Senior Associate
+      </p>
+      <p>
+        <b>Eki Uzamere</b>, Associate
+      </p>
+      <p>
+        <b>Tori Sproat</b>, Associate
+      </p>
+      <p>
+        <b>Julien Roa</b>, Associate
+      </p>
+  </div>
+  <div>
+    <h2>Spectrum</h2>
+      <p>
+        <b>Ariana Novo</b>, Spectrum Editor
+      </p>
+      <p>
+        <b>Emma Cho</b>, Deputy Spectrum Editor
+      </p>
+      <p>
+        <b>Haley Long</b>, Deputy Spectrum Editor
+      </p>
+      <p>
+        <b>Aliza Rabinovitz</b>, Deputy Spectrum Editor
+      </p>
+      <p>
+        <b>Swethaa Suresh</b>, Deputy Spectrum Editor
+      </p>
+      <p>
+        <b>Kylie Gall</b>, Staff Writer
+      </p>
+      <p>
+        <b>Caroline Somers</b>, Staff Writer
+      </p>
+      <p>
+        <b>Michelle Twan</b>, Staff Writer
+      </p>
+  </div>
+  <div>
+    <h2>Arts and Entertainment</h2>
+      <p>
+        <b>Bella Druckman</b>, Arts and Entertainment Editor
+      </p>
+      <p>
+        <b>Fernanda Aguero</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Noah Bullwinkle</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Isa Farfan</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Vincent Hou</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Katie Levine</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Irene Madrigal</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Emma Schartz</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Fernanda Aguero</b>, Deputy Editor
+      </p>
+  </div>
+  <div>
+    <h2>The Eye</h2>
+	    <p>
+        <b>Annie Cheng</b>, Eye Managing Editor
+      </p>
+      <p>
+        <b>Derek Ng</b>, Eye Managing Editor
+      </p>
+      <p>
+        <b>Lilienne Shore Kilgore-Brown</b>, Features Editor
+      </p>
+      <p>
+        <b>Meg Lunny</b>, Leads Editor
+      </p>
+      <p>
+        <b>Bella Aldrete</b>, View From Here Editor
+      </p>
+      <p>
+        <b>Mel Wang</b>
+      </p>
+  </div>
+  <div>
+    <h2>Sports</h2>
+      <p>
+        <b>Miles Schachner</b>, Sports Editor
+      </p> 
+      <p>
+        <b>Jorge Hernandez</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Stephen Dames</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Robert Gao</b>, Deputy Editor
+      </p>
+      <p>
+        <b>Matthew Kim</b>
+      </p>
+      <p>
+        <b>Rebecca Wachen</b>
+      </p>
+      <p>
+        <b>Takashi Williams</b>
+      </p>
 </div>
-
-
       </SubDiv>
               </Row>
             </Body>
             </CreditsSection>
-
-
     </>
   );
 };

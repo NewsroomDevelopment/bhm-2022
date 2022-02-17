@@ -179,7 +179,7 @@ const ArticleData = {
       title: "Remembering Frank Thomas, Columbia basketball star and philanthropic giant",
     },
     {
-      diameter: 10,
+      diameter: 12,
       link: "https://www.columbiaspectator.com/sports/2022/02/14/manuel-golden-flash-riveros-storied-columbia-career-as-a-two-sport-athlete/",
       side: "left",
       type: "article",

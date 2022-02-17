@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import "./TimelineBall.css"
+import { device } from "../device";
+
 
 const TimelineBallStyle = styled.button`
     border-radius: 50%;
@@ -15,15 +17,26 @@ const TimelineBallStyle = styled.button`
     border: transparent;
     cursor: pointer;
     font-family: Roboto Slab;
+    @media ${device.mobile} {
+      height: ${(props) => props.diameter * 2}vw;
+      width: ${(props) => props.diameter * 2}vw;
+   }
 `
 
 const TimelineText = styled.div`
     clear: left;
     display: block;
-    padding-left: ${props => props.diameter/2}vw;
-    padding-right: ${props => props.diameter/2}vw;
+    padding-left: ${props => props.diameter / 2}vw;
+    padding-right: ${props => props.diameter / 2}vw;
     font-family: Roboto, sans-serif;
     font-style: italic; 
+    @media ${device.mobile} {
+      font-size: 0.75em;
+   }
+   @media ${device.tablet} {
+    font-size: 0.8em;
+ }
+
 `
 
 function NewTab() {
@@ -35,7 +48,7 @@ const TimelineBall = ({ diameter, link, image, title }) => {
   return (
     <div>
       <TimelineBallStyle
-        onClick={function(){window.open(link)}}
+        onClick={function () { window.open(link) }}
         diameter={diameter} image={image} title={title} link={link}>
       </TimelineBallStyle>
       <TimelineText diameter={diameter} class="caption">{title}</TimelineText>

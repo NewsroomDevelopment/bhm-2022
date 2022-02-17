@@ -63,14 +63,13 @@ const LetterEditor = () => {
             <Title>Letter from the Editor</Title>
             <Body>
                 <p>Dear readers, </p>
-                <p>Each year during the month of February, we celebrate Black History Month, which is a time dedicated to highlighting the accomplishments of Black Americans and Black culture. This year, it is even more important to champion Black scholars, artists, athletes, entrepreneurs, and future leaders as we aim to amplify their voices.
-</p>
-                <p>Within Spectator’s Black History Month issue, you can find coverage of the development of distinct foodways and food trends in Harlem; profiles of Black student activists, haircare entrepreneurs, and musicians whose heritage has influenced their craft; and an examination of the University’s failure to provide resources to students who want to learn art forms with roots in the Black community like tap dance or jazz music. Furthermore, the issue explores new developments in uplifting marginalized voices, both in professors’ attempts to address racism through adjusting syllabi to highlight Black and other historically underrepresented scholars and through the University’s racial justice mini-grants.</p>
-                <p>Columbia is an institution with a long history of racial injustice, and its narratives have often been whitewashed. We hope that within this edition you can learn more about the long-overlooked contributions that Black scholars, activists, and creatives have made to the Columbia and larger West Harlem community.
-</p>
+                <p>Every year in February, we come together to celebrate Black History Month by uplifting and giving a platform to the stories, accomplishments, and unique lived experiences of Black Americans, as well as continuing to question how the institutions we participate in perpetuate anti-Blackness in our daily lives. We hope you’ll join us in this annual commemoration with our 2022 Black History Month Issue. </p>
+                <p>Within Spectator’s Black History Month edition, explore the history of Childs Memorial Temple Church, once the site of Malcolm X’s funeral and now the site of a controversial sale. Learn about how Black West Harlem entrepreneurs are adapting to a marijuana market in transition, the contentious renaming of a Teachers College building as well as shortcomings in faculty diversity initiatives in the Arts and Sciences. Hear from students from the Black Student-Athlete Alliance, the Muslim Afro Niyyah Students Association, and more. Explore the accomplishments of athletes like wrestler Joshua Ogunsanya, CC ’24,  and Manuel “Golden Flash” Rivero, SEAS ’33, Public Health ’38. Appreciate the work of creatives like DJ Kofi Meighan, SEAS ’23, and Tik Tok star Clarke Peoples, CC ’23. Dive deep into the origins of the Malcolm X Lounge in Hartley Hall, the shifting nature of the literary canons in the English department, and the Columbia School of International and Public Affairs’ partnership with the African-American Redress Network. </p>
+                <p>We hope you leave this edition with a deeper understanding of the contributions of Black Columbians and community members to our school and beyond. And we are excited to continue celebrating Black history, voices, stories, and lives beyond the month of February. </p>
                 <hr></hr>
-                <p>Sarah Braka, Editor in Chief</p>
-                <p>Elizabeth Karpen, Managing Editor</p>
+                <p>Sincerely,</p>
+                <p>Clara Ence Morse, Editor in Chief</p>
+                <p>Dia Gill, Managing Editor</p>
             </Body>
         </LetterWrap>
     );

@@ -12,7 +12,7 @@ import TimelineHeading from "../components/TimelineHeading";
 import Illo from "../components/Illo";
 const useStyles = makeStyles((theme) => ({
   timeline: {
-    backgroundColor: "orange",
+    backgroundColor: "#FF5400",
     width: "0.3vw",
     margin: "0px",
   },

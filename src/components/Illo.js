@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "./TimelineBall.css";
+import { device } from "../device";
 
 const IlloDiv = styled.div`
   height: ${(props) => props.height}vw;
@@ -15,6 +16,11 @@ const IlloDiv = styled.div`
   margin-left: ${(props) => props.paddingLeft}vw;
   margin-right: ${(props) => props.paddingRight}vw;
   margin-top: 2vw;
+  @media ${device.mobile} {
+    height: ${(props) => props.height*1.2}vw;
+    width: ${(props) => props.width*1.2}vw;
+    padding: 1vw;
+ }
 `;
 
 const Illo = ({ image, height, width, rotation, paddingLeft, paddingRight}) => {

@@ -9,7 +9,6 @@ import { device } from "../device";
 const NavWrap = styled.div`
     display:none;
     @media ${device.mobile} {
-        
         text-align: center;
         margin: auto;
         padding-top: 0rem;
@@ -36,7 +35,7 @@ const Tab = styled.a`
     font-weight: normal;
     padding-left: 0.5em;
     cursor: pointer;
-    background-color: #FDE6C495;
+    background-color: #FFF5E1;
 `;
 const Logo = styled.div`
     z-index:100;

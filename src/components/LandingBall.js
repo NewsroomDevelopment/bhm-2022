@@ -2,16 +2,24 @@ import React from "react";
 import styled, { keyframes, css } from "styled-components";
 import "../index.css";
 import ArticleData from '../data/ArticleData';
+import { device } from "../device";
+
 
 const Ball = styled.div`
-  height: 10vw;
-  width: 10vw;
+  height: 9vw;
+  width: 9vw;
   margin: 2vw;
   background-image: url(${(props) => props.image});
   background-size: cover;
   border-radius: 50%;
   display: inline-block;
   animation: ${(props) => props.trigger ? css`${drop(props.percent)} 3s forwards` : ""};
+  @media ${device.mobile} {
+    height: 10vw;
+    width: 10vw;
+    margin: 1vw;
+    padding: 1vw;
+  }
 }
 `;
 

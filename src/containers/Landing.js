@@ -11,15 +11,11 @@ import MobileNavBar from "../components/MobileNav";
 
 const NavColumn = styled.div`
   width: 10em;
-  float:right;
-  @media ${device.mobile} {
-    width: 11em;
-    float: right;
-  }
+  float: right;
 `;
 
 const Wrapper = styled.div`
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background-color: #fff5e1;
 `;
@@ -28,16 +24,25 @@ const Title = styled.div`
   display: flex;
   text-transform: uppercase;
   justify-content: center;
-  font-size: 3vw;
+  font-size: 3em;
   align-items: center;
   text-align: center;
   line-height: 5vw;
   font-family: Roboto Slab;
   font-weight: 900;
+  @media ${device.mobile} {
+    font-size: 2em;
+    line-height: 2em;
+    padding: 2vw;
+    height: 60vw;
+  }
 `;
 
 const Row = styled.div`
   width: 100%;
+  @media ${device.mobile} {
+    padding-top: 10vw;
+  }
 `;
 
 const Landing = ({}) => {

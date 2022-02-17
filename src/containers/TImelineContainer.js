@@ -9,6 +9,7 @@ import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import ArticleData from '../data/ArticleData';
 import TimelineBall from '../components/TimelineBall';
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles';
+import TimelineHeading from '../components/TimelineHeading';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -38,27 +39,48 @@ const TimelineContainer = ({ }) => {
   return (
     <Wrapper>
       <Timeline>
+      <TimelineItem>
+          <TimelineSeparator>
+            <TimelineConnector className={classes.timeline} />
+          </TimelineSeparator>
+          <TimelineContent>
+            <TimelineHeading section='columbia'></TimelineHeading>
+          </TimelineContent>
+        </TimelineItem>
+        
+        <TimelineItem>
+          <TimelineOppositeContent>
+             <TimelineHeading section='new york' side='left'></TimelineHeading>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector className={classes.timeline} />
+          </TimelineSeparator>
+          <TimelineContent><div>
+            {ArticleData['columbia'].map((article) => article.side === "right" ? <TimelineBall diameter={article.diameter} link={article.link} image={article.image} title={article.title}></TimelineBall> : null)}
+          </div></TimelineContent>
+        </TimelineItem>
+
         <TimelineItem>
           <TimelineSeparator>
             <TimelineConnector className={classes.timeline} />
           </TimelineSeparator>
           <TimelineContent>
             <div>
-              {ArticleData['columbia'].map((article) => <TimelineBall diameter={article.diameter} link={article.link} image={article.image} title={article.title}></TimelineBall>)}
+              {ArticleData['columbia'].map((article) => article.side === "right" ? <TimelineBall diameter={article.diameter} link={article.link} image={article.image} title={article.title}></TimelineBall> : null)}
             </div>
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
           <TimelineOppositeContent>
             <div>
-              {ArticleData['columbia'].map((article) => <TimelineBall diameter={article.diameter} link={article.link} image={article.image} title={article.title}></TimelineBall>)}
+              {ArticleData['columbia'].map((article) => article.side === "left" ? <TimelineBall diameter={article.diameter} link={article.link} image={article.image} title={article.title}></TimelineBall> : null)}
             </div>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector className={classes.timeline} />
           </TimelineSeparator>
           <TimelineContent><div>
-            {ArticleData['columbia'].map((article) => <TimelineBall diameter={article.diameter} link={article.link} image={article.image} title={article.title}></TimelineBall>)}
+            {ArticleData['columbia'].map((article) => article.side === "right" ? <TimelineBall diameter={article.diameter} link={article.link} image={article.image} title={article.title}></TimelineBall> : null)}
           </div></TimelineContent>
         </TimelineItem>
         <TimelineItem>

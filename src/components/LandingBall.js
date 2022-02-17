@@ -29,7 +29,6 @@ const drop = randomPercent => keyframes`
 `;
 
 const ImageWrap = styled.div`
-    width: 100%;
     height: 50%;
     padding-left: 15%;
     padding-right: 15%;

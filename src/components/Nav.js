@@ -49,7 +49,7 @@ const NavText = styled.div`
 const Nav = ({ current, setSection }) => {
   const sections = {
     Columbia: "columbia",
-    "A&E": "arts & entertainment",
+    "A&E": "a&e",
     Sports: "sports",
     "New York": "new york",
     Opinion: "opinion",

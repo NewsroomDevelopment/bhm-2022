@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import '../index.css';
-import Crown from '../crown1.svg';
 
 const LetterWrap = styled.div`
     padding-bottom:5vh;
@@ -13,16 +12,6 @@ const LetterWrap = styled.div`
         padding-right:5%;
     }
     font-family: Roboto Slab;
-`;
-
-const CrownStyle = styled.div`
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-    text-align: right;
-    margin-bottom: 1vw;
-    @media (max-width: 768px) {
-        padding-left:5%;
-        padding-right:5%;
-    }
 `;
 
 const Title = styled.div`
@@ -57,9 +46,6 @@ const Body = styled.div`
 const LetterEditor = () => {
     return (
         <LetterWrap>
-            <CrownStyle>
-                <img src={Crown} alt="Crown Logo"/>
-            </CrownStyle>
             <Title>Letter from the Editor</Title>
             <Body>
                 <p>Dear readers, </p>

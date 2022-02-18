@@ -7,10 +7,24 @@ import VerticalNav from '../components/Nav';
 import LandingData from '../data/LandingData';
 import ArticleData from '../data/ArticleData';
 import MobileNavBar from "../components/MobileNav";
+import Crown from '../crown1.svg';
 
+
+const CrownStyle = styled.div`
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+    float: right;
+    padding: 1vw;
+    @media (max-width: 768px) {
+        padding-left:5%;
+        padding-right:5%;
+    }
+    @media ${device.mobile} {
+    display: none;
+    }
+`;
 
 const NavColumn = styled.div`
-  width: 10em;
+  width: 5em;
   float: right;
 `;
 
@@ -21,6 +35,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.div`
+  color: #14213D;
   display: flex;
   text-transform: uppercase;
   justify-content: center;
@@ -45,7 +60,7 @@ const Row = styled.div`
   }
 `;
 
-const Landing = ({}) => {
+const Landing = ({ }) => {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -54,28 +69,31 @@ const Landing = ({}) => {
     // subscribe event
     window.addEventListener("scroll", handleScroll);
   }, []);
-  
+
   return (
     <>
-    <NavColumn>
-         <VerticalNav/>
+      <CrownStyle>
+        <a href="https://www.columbiaspectator.com/"><img src={Crown} alt="Crown Logo" /></a>
+      </CrownStyle>
+      <NavColumn>
+        <VerticalNav />
       </NavColumn>
-      <MobileNavBar/>
+      <MobileNavBar />
       <Wrapper>
         {scrolled}
         <Row>
-          <LandingBall articles={LandingData['landing1']} scrolled={scrolled}/>
+          <LandingBall articles={LandingData['landing1']} scrolled={scrolled} />
         </Row>
-      
+
         <Title>
           {" "}
           A Look in: <br /> Black History Month
         </Title>
         <Row>
-          <LandingBall articles={LandingData['landing2']} scrolled={scrolled}/>
+          <LandingBall articles={LandingData['landing2']} scrolled={scrolled} />
         </Row>
 
-        </Wrapper>
+      </Wrapper>
     </>
   );
 };

@@ -44,7 +44,6 @@ const Body = styled.div`
     text-align: center;
     font-family: "Roboto Slab";
   }
-  margin-top: 5%;
 `;
 
 const SubDiv = styled.div`
@@ -66,7 +65,7 @@ const Row = styled.div`
   flex-wrap: wrap;
   text-align: left;
   font-size: 0.8em;
-  padding: 1vw;
+  padding: 5vw;
   justify-content: center;
   justify-content: space-evenly;
   @media ${device.mobile} {
@@ -112,10 +111,13 @@ const Credits = () => {
                 <p> <b>Elaine Lee</b>, Newsroom Developer </p>
                 <p> <b>James Yiu</b>, Newsroom Developer</p>
                 <p> <b>Noah Bergam</b>, Newsroom Developer</p>
+                <p> <b>Philippe Wu</b>, Head of Product </p>
+                <p> <b>Christina Su</b>, Product Manager</p>
+                <p> <b>Anissa Arakal</b>, Product Designer</p>
               </div>
 
               <div>
-                <h2>Cover Illustration by:</h2>
+                <h2>Cover Illustration By:</h2>
                 <p> <b>Sadia Sharif</b>, Deputy Illustrations Editor</p>
               </div>
 

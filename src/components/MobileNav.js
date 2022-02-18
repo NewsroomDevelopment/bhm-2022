@@ -25,6 +25,13 @@ const NavWrap = styled.div`
      }
 `;
 
+const ShowMenu = styled.div`
+     display: none;
+     @media ${device.mobile} {
+         display: block;
+     }
+`
+
 const Tab = styled.a`
     font-size: 1.5rem;
     line-height: 1.85em;
@@ -57,48 +64,50 @@ const MobileNavBar = ({ color, current, setSection }) => {
     }
     const sections = {
         Columbia: "columbia",
-        "A&E": "arts & entertainment",
+        "A&E": "a&e",
         Sports: "sports",
         "New York": "new york",
         Opinion: "opinion",
         "The Eye": "the eye",
         Spectrum: "spectrum"
-      };
+    };
     return (
-    <>
-        <NavWrap>
-            <Logo>
-                <a href="https://www.columbiaspectator.com/" style={{
-                }}><img style={{
-                    height: "40px",
-                    width: "40px",
-                }} src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/LC75RL476NFG3P677LOBAW2MXE.png"></img></a>
-            </Logo>
-            <Burger>
-            <HamburgerMenu
-                isOpen={open}
-                menuClicked={() => handleClick()}
-                width={30}
-                height={20}
-                strokeWidth={5}
-                rotate={0}
-                color='white'
-                borderRadius={10}
-                animationDuration={0.5}
-                zIndex={100}
-                className="over"
-            />
-            
-            </Burger>
-            
-        </NavWrap>
-        <Menu isOpen={open} width={'100vw'}>
-            {Object.keys(sections).map((section) => (
-            <Tab onClick={() => setSection(sections[section])}>
-                <a href={`#${sections[section].toLowerCase()}`}> {section}</a>
-            </Tab>
-            ))}
-        </Menu>
+        <>
+            <NavWrap>
+                <Logo>
+                    <a href="https://www.columbiaspectator.com/" style={{
+                    }}><img style={{
+                        height: "40px",
+                        width: "40px",
+                    }} src="https://cloudfront-us-east-1.images.arcpublishing.com/spectator/LC75RL476NFG3P677LOBAW2MXE.png"></img></a>
+                </Logo>
+                <Burger>
+                    <HamburgerMenu
+                        isOpen={open}
+                        menuClicked={() => handleClick()}
+                        width={30}
+                        height={20}
+                        strokeWidth={5}
+                        rotate={0}
+                        color='white'
+                        borderRadius={10}
+                        animationDuration={0.5}
+                        zIndex={100}
+                        className="over"
+                    />
+
+                </Burger>
+
+            </NavWrap>
+            <ShowMenu>
+                <Menu isOpen={open} width={'100vw'}>
+                    {Object.keys(sections).map((section) => (
+                        <Tab onClick={() => setSection(sections[section])}>
+                            <a href={`#${sections[section].toLowerCase()}`}> {section}</a>
+                        </Tab>
+                    ))}
+                </Menu>
+            </ShowMenu>
         </>
 
 

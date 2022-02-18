@@ -9,8 +9,10 @@ const TimelineBallStyle = styled.button`
     width: ${props => props.diameter}vw;
     height: ${props => props.diameter}vw;
     background-image: url(${props => props.image});
+    transition: 0.5s all ease-in-out;
     Access-Control-Allow-Origin: *;
     display: inline-block;
+    overflow: hidden;
     margin: 2vw;
     background-size: cover;
     vertical-align: middle;
@@ -20,7 +22,10 @@ const TimelineBallStyle = styled.button`
     @media ${device.mobile} {
       height: ${(props) => props.diameter * 2}vw;
       width: ${(props) => props.diameter * 2}vw;
-   }
+    }
+    &:hover {
+      transform: scale(1.5);
+    }
 `
 
 const TimelineText = styled.div`

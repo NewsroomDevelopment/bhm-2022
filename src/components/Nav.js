@@ -24,6 +24,12 @@ const NavSection = styled.div`
   }
 `;
 
+const Logo = styled.div`
+    z-index:100;
+    position:relative;
+    left:5%;
+`;
+
 const SectionText = styled.div`
   font-size: 1.5rem;
   line-height: 1.85em;

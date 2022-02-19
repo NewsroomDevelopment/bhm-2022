@@ -7,27 +7,6 @@ import VerticalNav from '../components/Nav';
 import LandingData from '../data/LandingData';
 import ArticleData from '../data/ArticleData';
 import MobileNavBar from "../components/MobileNav";
-import Crown from '../crown2.png';
-
-
-const CrownStyle = styled.div`
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-    background-image: url(${Crown});
-    display: inline-block;
-    padding: 1vw;
-    float: right;
-    width: 100px;
-    height: 100px;
-    @media (max-width: 768px) {
-        padding-left:5%;
-        padding-right:5%;
-    }
-    @media ${device.mobile} {
-      display: none;
-    }
-    z-index: 100;
-
-`;
 
 const Logo = styled.div`
     z-index:100;
@@ -63,7 +42,7 @@ const Title = styled.div`
   font-size: 3em;
   align-items: center;
   text-align: center;
-  line-height: 5vw;
+  line-height: 5vh;
   font-family: Roboto Slab;
   font-weight: 900;
   @media ${device.mobile} {
@@ -112,7 +91,7 @@ const Landing = ({ }) => {
 
         <Title>
           {" "}
-          A Look in: <br /> Black History Month
+          Celebrating <br />Black History Month
         </Title>
         <Row>
           <LandingBall articles={LandingData['landing2']} scrolled={scrolled} />
